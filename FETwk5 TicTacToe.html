@@ -5,28 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <section>
-        <h1 class="game-title">TIC TAC TOE</h1>
-        <div class="gameboard">
-          <div data-cell-index="0" class="cell"></div>
-          <div data-cell-index="1" class="cell"></div>
-          <div data-cell-index="2" class="cell"></div>
-          <div data-cell-index="3" class="cell"></div>
-          <div data-cell-index="4" class="cell"></div>
-          <div data-cell-index="5" class="cell"></div>
-          <div data-cell-index="6" class="cell"></div>
-          <div data-cell-index="7" class="cell"></div>
-          <div data-cell-index="8" class="cell"></div>
-        </div>
-        <h2 class="game-status"></h2>
-        <button class="restart">Restart Game</button>
-      </section>
+  <h1 class= "center" id="game">TIC TAC TOE</h1>
 
+  <div class= "alert alert-primary" id="message">X gets to start</div>
+  <br>
+  <table class= "center" border=1px>
+    <tr>
+      <td class="Square" id= "box1"></td>
+      <td class="Square" id= "box2"></td>
+      <td class="Square" id= "box3"></td>
+    </tr>
+    <tr>
+      <td class="Square" id= "box4"></td>
+      <td class="Square" id= "box5" ></td>
+      <td class="Square" id= "box6"></td>
+    </tr>
+    <tr>
+      <td class="Square" id= "box7"></td>
+      <td class="Square" id= "box8" ></td>
+      <td class="Square" id= "box9"></td>
+    </tr>
+  </table>  
+<br>
+  <div class="text-center">
+      <button type="button" class="btn btn-primary">Restart Game</button>
+  </div>
     <script src="node_modules/jquery/dist/jquery.js"></script>
-    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="FETwk5 TicTacToe.js"></script>
     
 </body>
